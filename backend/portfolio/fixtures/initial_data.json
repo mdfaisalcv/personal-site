@@ -1,0 +1,125 @@
+[
+  {
+    "model": "portfolio.profile",
+    "pk": 1,
+    "fields": {
+      "full_name": "Md. Faisal Rahman",
+      "title": "Full Stack Web Developer",
+      "tagline": "I design and build fast, scalable web applications from front to back.",
+      "bio": "I'm a full stack developer with a passion for building clean, user-friendly web applications. I specialize in Python/Django on the backend and React/Next.js on the frontend, and I enjoy turning complex problems into simple, well-designed solutions. Outside of coding, I love exploring new technologies and contributing to open-source projects.",
+      "email": "faisal.rahman@example.com",
+      "phone": "+880 1712-345678",
+      "address": "Dhaka, Bangladesh",
+      "photo": "",
+      "cv_file": "",
+      "github_url": "https://github.com/faisalrahman",
+      "linkedin_url": "https://linkedin.com/in/faisalrahman",
+      "facebook_url": "https://facebook.com/faisalrahman",
+      "twitter_url": "https://twitter.com/faisalrahman",
+      "website_url": "https://faisalrahman.dev",
+      "updated_at": "2026-01-01T00:00:00Z"
+    }
+  },
+
+  { "model": "portfolio.education", "pk": 1, "fields": {
+      "profile": 1, "institution": "University of Dhaka",
+      "degree": "B.Sc. in Computer Science & Engineering",
+      "field_of_study": "Computer Science", "start_year": "2021", "end_year": "2025",
+      "result": "CGPA 3.82/4.00",
+      "description": "Coursework: Data Structures, Algorithms, Database Systems, Web Engineering, Software Design. Final year thesis on real-time recommendation systems.",
+      "order": 1 } },
+  { "model": "portfolio.education", "pk": 2, "fields": {
+      "profile": 1, "institution": "Notre Dame College, Dhaka",
+      "degree": "Higher Secondary Certificate (HSC)",
+      "field_of_study": "Science", "start_year": "2018", "end_year": "2020",
+      "result": "GPA 5.00/5.00",
+      "description": "Member of the college Science Club and Programming Club.",
+      "order": 2 } },
+  { "model": "portfolio.education", "pk": 3, "fields": {
+      "profile": 1, "institution": "Ideal School and College, Dhaka",
+      "degree": "Secondary School Certificate (SSC)",
+      "field_of_study": "Science", "start_year": "2016", "end_year": "2018",
+      "result": "GPA 5.00/5.00",
+      "description": "", "order": 3 } },
+
+  { "model": "portfolio.experience", "pk": 1, "fields": {
+      "profile": 1, "company": "TechNova Ltd.", "role": "Full Stack Developer",
+      "location": "Dhaka, Bangladesh (Hybrid)",
+      "start_date": "Jul 2025", "end_date": "",
+      "description": "- Building and maintaining internal SaaS tools used by 200+ employees.\n- Designed REST APIs with Django REST Framework consumed by a Next.js frontend.\n- Reduced average page load time by 40% through query optimization and caching.\n- Mentored 2 junior developers and led weekly code reviews.",
+      "order": 1 } },
+  { "model": "portfolio.experience", "pk": 2, "fields": {
+      "profile": 1, "company": "PixelCraft Studio", "role": "Frontend Developer (Part-time)",
+      "location": "Remote",
+      "start_date": "Jan 2024", "end_date": "Jun 2025",
+      "description": "- Developed responsive UI components in React for client marketing sites.\n- Collaborated directly with designers to translate Figma mockups into pixel-perfect pages.\n- Improved Lighthouse performance scores from ~70 to ~95 on 5 client projects.",
+      "order": 2 } },
+  { "model": "portfolio.experience", "pk": 3, "fields": {
+      "profile": 1, "company": "University CSE Department", "role": "Teaching Assistant",
+      "location": "University of Dhaka",
+      "start_date": "Sep 2023", "end_date": "Dec 2023",
+      "description": "- Assisted in delivering lab sessions for the Web Programming course.\n- Graded assignments and held office hours for 60+ students.",
+      "order": 3 } },
+
+  { "model": "portfolio.skillcategory", "pk": 1, "fields": { "profile": 1, "name": "Languages", "order": 1 } },
+  { "model": "portfolio.skillcategory", "pk": 2, "fields": { "profile": 1, "name": "Frameworks & Libraries", "order": 2 } },
+  { "model": "portfolio.skillcategory", "pk": 3, "fields": { "profile": 1, "name": "Databases", "order": 3 } },
+  { "model": "portfolio.skillcategory", "pk": 4, "fields": { "profile": 1, "name": "Tools & Platforms", "order": 4 } },
+
+  { "model": "portfolio.skill", "pk": 1, "fields": { "category": 1, "name": "Python", "proficiency": 90, "order": 1 } },
+  { "model": "portfolio.skill", "pk": 2, "fields": { "category": 1, "name": "JavaScript", "proficiency": 85, "order": 2 } },
+  { "model": "portfolio.skill", "pk": 3, "fields": { "category": 1, "name": "TypeScript", "proficiency": 75, "order": 3 } },
+  { "model": "portfolio.skill", "pk": 4, "fields": { "category": 1, "name": "C++", "proficiency": 65, "order": 4 } },
+
+  { "model": "portfolio.skill", "pk": 5, "fields": { "category": 2, "name": "Django / DRF", "proficiency": 90, "order": 1 } },
+  { "model": "portfolio.skill", "pk": 6, "fields": { "category": 2, "name": "React / Next.js", "proficiency": 85, "order": 2 } },
+  { "model": "portfolio.skill", "pk": 7, "fields": { "category": 2, "name": "Tailwind CSS", "proficiency": 88, "order": 3 } },
+  { "model": "portfolio.skill", "pk": 8, "fields": { "category": 2, "name": "Node.js / Express", "proficiency": 65, "order": 4 } },
+
+  { "model": "portfolio.skill", "pk": 9, "fields": { "category": 3, "name": "PostgreSQL", "proficiency": 80, "order": 1 } },
+  { "model": "portfolio.skill", "pk": 10, "fields": { "category": 3, "name": "MySQL", "proficiency": 75, "order": 2 } },
+  { "model": "portfolio.skill", "pk": 11, "fields": { "category": 3, "name": "MongoDB", "proficiency": 60, "order": 3 } },
+  { "model": "portfolio.skill", "pk": 12, "fields": { "category": 3, "name": "Redis", "proficiency": 55, "order": 4 } },
+
+  { "model": "portfolio.skill", "pk": 13, "fields": { "category": 4, "name": "Git & GitHub", "proficiency": 90, "order": 1 } },
+  { "model": "portfolio.skill", "pk": 14, "fields": { "category": 4, "name": "Docker", "proficiency": 65, "order": 2 } },
+  { "model": "portfolio.skill", "pk": 15, "fields": { "category": 4, "name": "AWS (EC2 / S3)", "proficiency": 55, "order": 3 } },
+  { "model": "portfolio.skill", "pk": 16, "fields": { "category": 4, "name": "Figma", "proficiency": 60, "order": 4 } },
+
+  { "model": "portfolio.project", "pk": 1, "fields": {
+      "profile": 1, "title": "CASHier \u2014 Cash Management Dashboard",
+      "description": "A centralized dashboard for tracking multi-branch cash collections, deposits, and bank reconciliation in real time, built for a distribution company with 35+ branches.",
+      "tech_stack": "Django, DRF, React, Chart.js, PostgreSQL",
+      "image": "", "live_url": "", "repo_url": "https://github.com/faisalrahman/cashier-dashboard",
+      "featured": true, "order": 1 } },
+  { "model": "portfolio.project", "pk": 2, "fields": {
+      "profile": 1, "title": "TaskFlow \u2014 Team Task Manager",
+      "description": "A Trello-style Kanban board with drag-and-drop tasks, team workspaces, and real-time updates using WebSockets.",
+      "tech_stack": "Next.js, Django Channels, PostgreSQL, Tailwind CSS",
+      "image": "", "live_url": "https://taskflow-demo.example.com", "repo_url": "https://github.com/faisalrahman/taskflow",
+      "featured": true, "order": 2 } },
+  { "model": "portfolio.project", "pk": 3, "fields": {
+      "profile": 1, "title": "EduTrack \u2014 Student Result Portal",
+      "description": "A results and attendance portal for a school with role-based logins for admins, teachers, and students.",
+      "tech_stack": "Django, Bootstrap, MySQL",
+      "image": "", "live_url": "", "repo_url": "https://github.com/faisalrahman/edutrack",
+      "featured": false, "order": 3 } },
+  { "model": "portfolio.project", "pk": 4, "fields": {
+      "profile": 1, "title": "QuickCart \u2014 E-commerce Storefront",
+      "description": "A lightweight e-commerce storefront with product filtering, cart, and a Stripe-based checkout flow.",
+      "tech_stack": "Next.js, Stripe, Django REST Framework",
+      "image": "", "live_url": "https://quickcart-demo.example.com", "repo_url": "https://github.com/faisalrahman/quickcart",
+      "featured": true, "order": 4 } },
+  { "model": "portfolio.project", "pk": 5, "fields": {
+      "profile": 1, "title": "WeatherNow \u2014 Weather Forecast App",
+      "description": "A minimal weather app showing real-time forecasts using a public weather API, with saved locations and unit toggles.",
+      "tech_stack": "React, OpenWeather API, Tailwind CSS",
+      "image": "", "live_url": "https://weathernow-demo.example.com", "repo_url": "https://github.com/faisalrahman/weathernow",
+      "featured": false, "order": 5 } },
+  { "model": "portfolio.project", "pk": 6, "fields": {
+      "profile": 1, "title": "DevBlog \u2014 Personal Blogging Platform",
+      "description": "A Markdown-based blogging platform with tags, search, and an admin panel for managing posts.",
+      "tech_stack": "Django, Next.js, PostgreSQL",
+      "image": "", "live_url": "", "repo_url": "https://github.com/faisalrahman/devblog",
+      "featured": false, "order": 6 } }
+]
