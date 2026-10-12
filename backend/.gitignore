@@ -1,0 +1,11 @@
+@"
+.env
+data.json
+__pycache__/
+*.pyc
+db.sqlite3
+staticfiles/
+node_modules/
+.next/
+venv/
+"@ | Set-Content .gitignore -Encoding ascii
